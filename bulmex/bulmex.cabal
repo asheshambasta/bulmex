@@ -62,9 +62,11 @@ library
     , keycode
     , lens
     , network-uri
-    , reflex >=0.6.1 && <0.7
-    , reflex-dom-core >=0.5 && <0.6
-    , reflex-dom-helpers >=0.2.0.1 && <0.3.0.0
+    -- , reflex >=0.6.1 && <0.7
+    , reflex 
+    -- , reflex-dom-core >=0.5 && <0.6
+    , reflex-dom-core
+    , reflex-dom-helpers >=0.2.0.2 && <0.3.0.0
     , text
     , time
     , witherable
@@ -111,9 +113,11 @@ test-suite unit
     , keycode
     , lens
     , network-uri
-    , reflex >=0.6.1 && <0.7
-    , reflex-dom-core >=0.5 && <0.6
-    , reflex-dom-helpers >=0.2.0.1 && <0.3.0.0
+    -- , reflex >=0.6.1 && <0.7
+    , reflex
+    -- , reflex-dom-core >=0.5 && <0.6
+    , reflex-dom-core
+    , reflex-dom-helpers >=0.2.0.2 && <0.3.0.0
     , text
     , time
     , witherable

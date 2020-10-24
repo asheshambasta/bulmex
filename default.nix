@@ -12,9 +12,10 @@
         prePatch = "";
       }));
       in self: super: {
-      reflex-dom-helpers = self.callPackage ./packages/reflex-dom-helpers.nix { };
+      # reflex-dom-helpers = self.callPackage ./packages/reflex-dom-helpers.nix { };
+      reflex-dom-helpers = self.callCabal2nix "reflex-dom-helpers" ../reflex-dom-helpers {}; 
       generic-lens = pkgs.haskell.lib.dontCheck (super.generic-lens);
-      bulmex = noHpack super.bulmex;
+      # bulmex = noHpack super.bulmex;
     };
 
     shells = {
